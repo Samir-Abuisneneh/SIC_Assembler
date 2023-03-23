@@ -40,7 +40,7 @@ class Instruction: #class for the instruction (its split into label, opcode, ope
             self.comment = line[comment_start:].strip()
 
 if len(sys.argv) < 3:
-    print("Please provide 2 file names as command line arguments")
+    print("Please provide 2 file names as command line arguments ex:(python main.py sample1.asm intermediate2.mdt)")
     sys.exit(1)
 
 opcode_map = {}
