@@ -1,11 +1,11 @@
 COPY       START     1000                COMMENT
 FIRST      STL       RETADR              COMMENT
-CLOOP      JSUB      RDREC              
+CLOOP      JSUB      RDREC
            LDA       LENGTH              COMMENTCOMMENTCOMMENTCOMMENTCOeeeeeeeeeeeeeeeeeeeMMENT
            COMP      ZERO                COMMENTCOMMENT
-           JEQ       ENDFIL             
+           JEQ       ENDFIL
            JSUB      WRREC               COMMENTCOMMENT
-           J         CLOOP              
+           J         CLOOP
 ENDFIL     LDA       EOF
            STA       BUFFER              COMMENT
            LDA       THREE              
